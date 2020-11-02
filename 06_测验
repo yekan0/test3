@@ -1,0 +1,25 @@
+#6.1
+f <- function(x1){
+  if (is.finite(x1) == TRUE){ 
+    s <- x1%%2
+      if (s == 0 )s<- TRUE
+      else s<- FALSE
+  }
+  else{
+    s <- NA
+  }
+  s
+}
+f(20)
+f(13)
+f(NaN)
+#6.2
+
+x <- function(x){
+  x
+}
+f <- function(a){
+  list("args" = pairlist(a),"body" = a)
+  f
+}
+f(x(2))
