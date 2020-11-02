@@ -1,0 +1,43 @@
+#5.1
+i <- -1
+j <- -1
+repeat{
+  i <- i +1
+    if (sqrt(i)%%1 == 0){
+      m <- i
+      n[i+1] <- m
+    }
+  if(i >= 9)break
+}
+a <- n
+a
+a = a[-which(sapply(a,is.null),arr.ind = TRUE)]
+a
+
+b = 25
+c = 36
+d = 49
+e = NULL
+f = 64
+g = NULL
+h = 81
+I = NULL
+x <- list(a,b,c,d,e,f,g,h,I)
+x
+#5.2
+frame <- data.frame(iris)
+frame
+mean(frame[[1]])
+mean(frame[[2]])
+mean(frame[[3]])
+mean(frame[[4]])
+#5.3
+id <- 1
+b1 <- data.frame(beaver1)
+b1$id <- id
+b1
+id2 <- 2
+b2 <- data.frame(beaver2)
+b2$id <- id2
+b2
+rbind(b1,b2)
